@@ -1,7 +1,10 @@
 # ui.R
 library(shiny)
 library(plotly)
+install.packages("shinythemes")
+library(shinythemes)
 shinyUI(navbarPage(
+  theme = shinytheme("cosmo"),
   "Electoral College",
   # Create a tab panel for your map
   tabPanel(
